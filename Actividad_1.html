@@ -5,20 +5,22 @@
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<title>jQuery UI Button - Default functionality</title>
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+  	<script src="https://use.fontawesome.com/5c4b468d34.js"></script>
+  	<script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body>
 <!-- Inicio codigo EVA -->
 	<div id="color">	
 		<div id="texto">
-			<p id="parrafo0" style="text-align: justify;">
+			<p id="parrafo0" style="text-align: justify;" video="3LThK964TvM">
 				<span style="font-family: 'century gothic'; font-size: small;"><strong>(Valor 1 punto) </strong></span><br/>
 				<span style="font-family: 'century gothic'; font-size: small;"><b><i>4.1 Resuelva el siguiente cuadro sinóptico en base a las estrategias didácticas y   las destrezas personales que permiten al alumno atender a sus necesidades e intereses. Es por ello la importancia de conocer ¿Cómo mejorar el rendimiento académico?.</i></b></span><br/>
 				<span style="font-family: 'century gothic'; font-size: small;"><b><i></i></b><strong>Estrategias:</strong></span>
 			</p>
-			<p id="parrafo1" style="text-align: justify;">El éxito tiene una simple fórmula: da lo mejor de ti y puede que a la gente le guste-Sam Ewing.</p>
+			<p id="parrafo1" style="text-align: justify;" video="Lyuwm-9-2U0">El éxito tiene una simple fórmula: da lo mejor de ti y puede que a la gente le guste-Sam Ewing.</p>
 
-			<p id="parrafo2" style="text-align: justify;">Una persona con una nueva idea es una broma hasta que la idea tiene éxito-Mark Twain.</p>
-			<div id="parrafo3" style="text-align: justify;">
+			<p id="parrafo2" style="text-align: justify;" video="zZDox9OBNKQ">Una persona con una nueva idea es una broma hasta que la idea tiene éxito-Mark Twain.</p>
+			<div id="parrafo3" style="text-align: justify;" video="dTU0xh_hhJo">
 				<ul id="vineta">
 					<li style="text-align: justify;"><span style="font-family: 'century gothic'; font-size: small;">Lea en forma detenida el capítulo 6.</span></li>
 					<li style="text-align: justify;"><span style="font-family: 'century gothic'; font-size: small;">Complete el cuadro con las estrategias utilizadas en la educación abierta y a distancia. Tomando como referencia las alternativas de respuesta señaladas en la matriz adjunta.</span></li>
@@ -30,7 +32,7 @@
 					<a href="#tablaUno" title="Cómo mejorar el rendimiento académico"><img alt="Descrpcion de la grafica 1" src="https://eva3.utpl.edu.ec/draftfile.php/165601/user/draft/719260039/Captura%20de%20pantalla%202017-06-07%20a%20la%28s%29%206.09.47%20PM.png" longdesc="file:///Users/diagramacion4/Desktop/LuisChalan/Documentos/prueba2.html" width="490" height="292" class="img-responsive" /></a>
 				</span>
 			</p>
-			<p id="parrafo5" style="text-align: center;"> parrafo cinco
+			<p id="parrafo5" style="text-align: center;" > parrafo cinco
 				<span style="font-family: 'century gothic'; font-size: small;"><img src="https://eva3.utpl.edu.ec/draftfile.php/165601/user/draft/719260039/1.jpg" alt="Descripción de la tabla" longdesc="#tablaUno" width="508" height="253" class="img-responsive" /></span>
 			</p>
 			<div id="parrafo6" style="bottom: 500px">
@@ -41,13 +43,12 @@
 		</div>
 	</div>
 
-	<div id="video1" style="display:none;">
-		<iframe style="bottom: 170px; right: 10px; z-index: 10; position: fixed; width: 30%; height: 30%;" src="https://www.youtube.com/embed/3LThK964TvM" allowfullscreen=""></iframe>
+	<div id="video1" style="display:none; bottom: 350px; right: 10px; z-index: 10; position: fixed; width: 25%; height: 25%;" >
 	</div>
 	
-	<div id="botones" style="text-align: center; bottom: 10px; right: 10px; z-index: 15; position: fixed; width: 210px; height: 200px;">
+	<div id="botones" style="text-align: center; bottom: 50px; right: 10px; z-index: 15; position: fixed; width: 210px; height: 250px; border: solid #DFDFDF 1px; padding: 10px; background: white;">
 		<fieldset>
-			<legend>Accesibilidad</legend>	
+			<legend><i class="fa fa-blind" aria-hidden="true"></i>Accesibilidad</legend>	
 			<p class="colorBoton">Contraste de colores</p>  				
 		    <select id="contraste" class="colorBoton" name="contraste" onchange="ShowSelected();" >
 		        <option value="1">Blanco y Negro</option>
@@ -59,29 +60,29 @@
 		        <option value="7">Amarillo y Negro</option>
 		        <option value="8">Negro y Amarillo</option>
 	      	</select>
-			<div id="audio" class="colorBoton" style=" margin-top: 10px; border:1px solid #000; background: #eee; margin-bottom: 10px; padding: 4px 0px 4px opx">Audio
-				<span id="audioOn" class="glyphicon glyphicon-volume-up" style="display:none;"></span>
-				<span id="audioOff" class="glyphicon glyphicon-volume-off"></span><br>
+			<div id="audio" class="colorBoton" style=" margin-top: 10px; border:1px solid #000; background: #eee; margin-bottom: 10px; padding: 4px 0px 4px 0px">Audio
+				<span id="audioOn" class="fa fa-assistive-listening-systems" style="display:none;"></span>
+				<span id="audioOff" class="fa fa-deaf"></span><br>
 				<button id="play" class="colorBoton" value="1">
-					<span id="audioPlay" class="glyphicon glyphicon-play">></span>	
+					<span id="audioPlay" class="fa fa-play"></span>	
 				</button>
 				<button id="pause" class="colorBoton" value="2" style="display:none;">
-					<span id="audioPause" class="glyphicon glyphicon-pause">||</span>			
+					<span id="audioPause" class="fa fa-pause"></span>			
 				</button>
 				<button id="regresar" class="colorBoton" value="3">
-					<span id="audioPause" class="glyphicon glyphicon-fast-backward"><-</span>	
+					<span id="audioPause" class="fa fa-backward"></span>	
 				</button>				
 				<button id="siguiente" class="colorBoton" value="4">
-					<span id="audioNext" class="glyphicon glyphicon-fast-forward">-></span>			
+					<span id="audioNext" class="fa fa-fast-forward"></span>			
 				</button>	
 				<button id="stop" class="colorBoton" value="5">
-					<span id="audioPause" class="glyphicon glyphicon-stop">[]</span>					
+					<span id="audioPause" class="fa fa-stop"></span>					
 				</button>
 				<input id="valorMas" type="" name="numero" value="0" style="display:none;">	
 			</div>
-    		<button id="video" class="colorBoton">Video<br>
-    			<span id="ojoOn" class="glyphicon glyphicon-eye-open" style="display:none;"></span>
-    			<span id="ojoOff" class="glyphicon glyphicon-eye-close"  ></span>
+    		<button id="video" class="colorBoton" title="Ver/Ocultar video">Video <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i><br>
+    			<span id="viewOn" class="fa fa-eye" style="display:none;"></span>
+    			<span id="viewOff" class="fa fa-eye-slash" ></span>
     		</button>
     	</fieldset>	
 	</div>
@@ -130,7 +131,9 @@
 	    	var generar;
 	    	var value;
 	    	var leerTexto = new SpeechSynthesisUtterance();
+	    	var urlCode ="";
 	    	var id = 0;
+	    	var player;
 	    	$(document).ready(function(){ 
 	    		$("#play").click(function(){ 
 					accion = "reproducir";		
@@ -151,26 +154,31 @@
 	    			texto();
 	    			if (accion == "reproducir" || e.keyCode == 87){
 						verDetener();
+						cargarVideo();	
 						speechSynthesis.resume();			
 						speechSynthesis.speak(leerTexto);	
 						finTexto();								
 	    			} else if (accion == "pause"  || e.keyCode == 32) {
 						verReproducir(); 
-						speechSynthesis.pause();									
+						speechSynthesis.pause();
+						player.pauseVideo();				
 					} else if (accion == "detener" || e.keyCode == 83) {
 						speechSynthesis.cancel();
 						finTexto();
+						player.stopVideo();
 					} else if (accion == "siguiente" || e.keyCode == 68) {
 						generar = "mas";
 						comprobarId();      
 			            texto();
+			            cargarVideo();	
 			            verDetener();
 			            speechSynthesis.speak(leerTexto);
-			            finTexto()	
+			            finTexto();
 					} else if (accion == "regresar" || e.keyCode == 65) {
 						generar = "menos";
 						comprobarId();
 			            texto();
+			            cargarVideo();	
 			            verDetener();
 			            speechSynthesis.speak(leerTexto);
 			            finTexto()
@@ -184,6 +192,7 @@
         		leerTexto = new SpeechSynthesisUtterance(valorSpan);     
         		leerTexto.lang = 'es-MX';
         		leerTexto.rate = 0.9; 
+        		urlCode =$("#parrafo"+id).attr("video"); //generar id del video - lenguaje de señas
 	    	}
 	    	function comprobarId(){
 	    		value = $("#valorMas").val();
@@ -216,7 +225,29 @@
 				$('#audioOn').show();
 				$('#play').hide(); 	
 				$('#pause').show(); 
-	    	}		
+	    	}	
+	    	function onYouTubeIframeAPIReady() {
+			    player = new YT.Player('video1', {
+			        width: 600,
+			        height: 400,
+			        videoId: $("#parrafo0").attr("video"),
+			        playerVars: {
+			            color: 'white'
+			        },
+			        events: {
+			            onReady: onPlayerReady
+			        }
+			    });
+			}  
+			
+		    function cargarVideo(){	    		
+	    		player.cueVideoById({videoId: urlCode}); //Asignar nuevo id del video
+	    		player.playVideo(); //reproducir video
+	    		
+	    	}	
+	    	function onPlayerReady(event) {
+		        event.target.playVideo();
+		      }  
 	    </script>
 	    <script type="text/javascript">
 		    $(document).ready(function(){
@@ -230,12 +261,13 @@
 				$("#video").on( "click", function() {	
 					if ($('#video1').is(':hidden')) {
 						$('#video1').show(); 
-						$('#ojoOn').show(); 
-						$('#ojoOff').hide();
+						$('#viewOn').show(); 
+						$('#viewOff').hide();
+						player.pauseVideo();
 					} else {
 						$('#video1').hide();
-						$('#ojoOn').hide(); 
-						$('#ojoOff').show();
+						$('#viewOn').hide(); 
+						$('#viewOff').show();
 					}	
 				});
 			});		    	
