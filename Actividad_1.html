@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<title>jQuery UI Button - Default functionality</title>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+</head>
+<body>
+<!-- Inicio codigo EVA -->
+	<div id="color">	
+		<div id="texto">
+			<p id="parrafo0" style="text-align: justify;">
+				<span style="font-family: 'century gothic'; font-size: small;"><strong>(Valor 1 punto) </strong></span><br/>
+				<span style="font-family: 'century gothic'; font-size: small;"><b><i>4.1 Resuelva el siguiente cuadro sinóptico en base a las estrategias didácticas y   las destrezas personales que permiten al alumno atender a sus necesidades e intereses. Es por ello la importancia de conocer ¿Cómo mejorar el rendimiento académico?.</i></b></span><br/>
+				<span style="font-family: 'century gothic'; font-size: small;"><b><i></i></b><strong>Estrategias:</strong></span>
+			</p>
+			<p id="parrafo1" style="text-align: justify;">El éxito tiene una simple fórmula: da lo mejor de ti y puede que a la gente le guste-Sam Ewing.</p>
+
+			<p id="parrafo2" style="text-align: justify;">Una persona con una nueva idea es una broma hasta que la idea tiene éxito-Mark Twain.</p>
+			<div id="parrafo3" style="text-align: justify;">
+				<ul id="vineta">
+					<li style="text-align: justify;"><span style="font-family: 'century gothic'; font-size: small;">Lea en forma detenida el capítulo 6.</span></li>
+					<li style="text-align: justify;"><span style="font-family: 'century gothic'; font-size: small;">Complete el cuadro con las estrategias utilizadas en la educación abierta y a distancia. Tomando como referencia las alternativas de respuesta señaladas en la matriz adjunta.</span></li>
+					<li style="text-align: justify;"><span style="font-family: 'century gothic'; font-size: small;">Revise las opciones para ubicar su respuesta (en el EVA seleccionará el ítem correcto junto a la característica)</span></li>
+				</ul>
+			</div>
+			<p id="parrafo4" style="text-align: center;"> parrafo cuatro
+				<span style="font-family: 'century gothic'; font-size: small;">
+					<a href="#tablaUno" title="Cómo mejorar el rendimiento académico"><img alt="Descrpcion de la grafica 1" src="https://eva3.utpl.edu.ec/draftfile.php/165601/user/draft/719260039/Captura%20de%20pantalla%202017-06-07%20a%20la%28s%29%206.09.47%20PM.png" longdesc="file:///Users/diagramacion4/Desktop/LuisChalan/Documentos/prueba2.html" width="490" height="292" class="img-responsive" /></a>
+				</span>
+			</p>
+			<p id="parrafo5" style="text-align: center;"> parrafo cinco
+				<span style="font-family: 'century gothic'; font-size: small;"><img src="https://eva3.utpl.edu.ec/draftfile.php/165601/user/draft/719260039/1.jpg" alt="Descripción de la tabla" longdesc="#tablaUno" width="508" height="253" class="img-responsive" /></span>
+			</p>
+			<div id="parrafo6" style="bottom: 500px">
+				<h5 style="text-align: justify;"><span style="font-family: 'century gothic'; font-size: small;">Figura:1 Cómo mejorar el rendimiento académico</span></h5>
+				<p style="text-align: justify;"><span style="font-family: 'century gothic'; font-size: small;">Descripción de la figura uno...</span></p>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="video1" style="display:none;">
+		<iframe style="bottom: 170px; right: 10px; z-index: 10; position: fixed; width: 30%; height: 30%;" src="https://www.youtube.com/embed/3LThK964TvM" allowfullscreen=""></iframe>
+	</div>
+	
+	<div id="botones" style="text-align: center; bottom: 10px; right: 10px; z-index: 15; position: fixed; width: 210px; height: 200px;">
+		<fieldset>
+			<legend>Accesibilidad</legend>	
+			<p class="colorBoton">Contraste de colores</p>  				
+		    <select id="contraste" class="colorBoton" name="contraste" onchange="ShowSelected();" >
+		        <option value="1">Blanco y Negro</option>
+		        <option value="2">Blanco y Rojo</option>
+		        <option value="3">Blanco y Verde</option>
+		        <option value="4">Rojo y Blanco</option>
+		        <option value="5">Verde y Blanco</option>
+		        <option value="6">Azul y Blanco</option>
+		        <option value="7">Amarillo y Negro</option>
+		        <option value="8">Negro y Amarillo</option>
+	      	</select>
+			<div id="audio" class="colorBoton" style=" margin-top: 10px; border:1px solid #000; background: #eee; margin-bottom: 10px; padding: 4px 0px 4px opx">Audio
+				<span id="audioOn" class="glyphicon glyphicon-volume-up" style="display:none;"></span>
+				<span id="audioOff" class="glyphicon glyphicon-volume-off"></span><br>
+				<button id="play" class="colorBoton" value="1">
+					<span id="audioPlay" class="glyphicon glyphicon-play">></span>	
+				</button>
+				<button id="pause" class="colorBoton" value="2" style="display:none;">
+					<span id="audioPause" class="glyphicon glyphicon-pause">||</span>			
+				</button>
+				<button id="regresar" class="colorBoton" value="3">
+					<span id="audioPause" class="glyphicon glyphicon-fast-backward"><-</span>	
+				</button>				
+				<button id="siguiente" class="colorBoton" value="4">
+					<span id="audioNext" class="glyphicon glyphicon-fast-forward">-></span>			
+				</button>	
+				<button id="stop" class="colorBoton" value="5">
+					<span id="audioPause" class="glyphicon glyphicon-stop">[]</span>					
+				</button>
+				<input id="valorMas" type="" name="numero" value="0" style="display:none;">	
+			</div>
+    		<button id="video" class="colorBoton">Video<br>
+    			<span id="ojoOn" class="glyphicon glyphicon-eye-open" style="display:none;"></span>
+    			<span id="ojoOff" class="glyphicon glyphicon-eye-close"  ></span>
+    		</button>
+    	</fieldset>	
+	</div>
+	<p>
+	  	<script type="text/javascript">
+	  		function ShowSelected(){
+			var codigo = document.getElementById("contraste").value;
+			switch (codigo) {
+				case "1":
+				    $("#color").css({'color':'#000000','background':'#FFFFFF'});
+				    $(".colorBoton").css({'color':'#000000','background':'#FFFFFF'});
+				    break;
+				case "2":
+				    $("#color").css({'color':'#FC0115','background':'#FFFFFF'});
+				    $(".colorBoton").css({'color':'#FC0115','background':'#FFFFFF'});
+				    break;
+				case "3":
+				    $("#color").css({'color':'#0BB82C','background':'#FFFFFF'});
+				    $(".colorBoton").css({'color':'#0BB82C','background':'#FFFFFF'});
+				    break;
+				case "4":
+				    $("#color").css({'color':'#FFFFFF','background':'#FC0115'});
+				    $(".colorBoton").css({'color':'#FFFFFF','background':'#FC0115'});
+				    break;
+				case "5":
+				    $("#color").css({'color':'#FFFFFF','background':'#0BB82C'});
+				    $(".colorBoton").css({'color':'#FFFFFF','background':'#0BB82C'});
+				    break;
+				case "6":
+				    $("#color").css({'color':'#FFFFFF','background':'#003FFF'});
+				    $(".colorBoton").css({'color':'#FFFFFF','background':'#003FFF'});
+				    break;
+				case "7":
+				    $("#color").css({'color':'#000000','background':'#FDFC00'});
+				    $(".colorBoton").css({'color':'#000000','background':'#FDFC00'});
+				    break;
+				case "8":
+				    $("#color").css({'color':'#FDFC00','background':'#000000'});
+				    $(".colorBoton").css({'color':'#FDFC00','background':'#000000'});
+				    break;
+				}
+			}
+	    </script>
+	    <script type="text/javascript">
+	    	var accion = "";
+	    	var generar;
+	    	var value;
+	    	var leerTexto = new SpeechSynthesisUtterance();
+	    	var id = 0;
+	    	$(document).ready(function(){ 
+	    		$("#play").click(function(){ 
+					accion = "reproducir";		
+				});
+				$("#pause").click(function(){  
+					accion = "pause";				
+				});
+				$("#stop").click(function(){  
+					accion = "detener";	
+				});
+				$("#siguiente").click(function(){  
+		            accion = "siguiente";
+				});
+				$("#regresar").click(function(){  
+					accion = "regresar";
+				});
+	    		$('body').bind("keyup click", function(e){	 
+	    			texto();
+	    			if (accion == "reproducir" || e.keyCode == 87){
+						verDetener();
+						speechSynthesis.resume();			
+						speechSynthesis.speak(leerTexto);	
+						finTexto();								
+	    			} else if (accion == "pause"  || e.keyCode == 32) {
+						verReproducir(); 
+						speechSynthesis.pause();									
+					} else if (accion == "detener" || e.keyCode == 83) {
+						speechSynthesis.cancel();
+						finTexto();
+					} else if (accion == "siguiente" || e.keyCode == 68) {
+						generar = "mas";
+						comprobarId();      
+			            texto();
+			            verDetener();
+			            speechSynthesis.speak(leerTexto);
+			            finTexto()	
+					} else if (accion == "regresar" || e.keyCode == 65) {
+						generar = "menos";
+						comprobarId();
+			            texto();
+			            verDetener();
+			            speechSynthesis.speak(leerTexto);
+			            finTexto()
+					}
+					accion = "";
+					e.keyCode = 0;	
+	    		});
+	    	});
+	    	function texto(){
+	    		var valorSpan = $("#parrafo"+id).text();
+        		leerTexto = new SpeechSynthesisUtterance(valorSpan);     
+        		leerTexto.lang = 'es-MX';
+        		leerTexto.rate = 0.9; 
+	    	}
+	    	function comprobarId(){
+	    		value = $("#valorMas").val();
+	    		if (parseInt(value) == "6" && generar == "mas") {
+	    			value = "-1";
+	    		} else if (value == "0" && generar == "menos"){
+	    			value = "7";
+	    		}
+	    		if (generar == "mas") {
+	    			id =  parseInt(value) + 1;
+	    		} else if (generar == "menos") {
+	    			id =  parseInt(value) - 1;
+	    		}
+	    		speechSynthesis.cancel();
+			    $("#valorMas").val(id);	
+	    	}
+	    	function finTexto(){
+	    		leerTexto.onend = function(event) {
+					verReproducir();
+				}
+	    	}
+	    	function verReproducir(){
+				$('#audioOn').hide();
+				$('#audioOff').show();
+				$('#pause').hide();
+				$('#play').show(); 
+	    	}
+	    	function verDetener(){
+				$('#audioOff').hide(); 
+				$('#audioOn').show();
+				$('#play').hide(); 	
+				$('#pause').show(); 
+	    	}		
+	    </script>
+	    <script type="text/javascript">
+		    $(document).ready(function(){
+		        $("#figura").click(function(){    
+		          	speechSynthesis.speak(new SpeechSynthesisUtterance("Cómo mejorar el rendimiento académico. Se divide en: Estragia, A. y Estrategias Personales. En estrategias, A. tenemos. Avances, B. y C. Dentro de B. Tecnología. y dentro de, C. Equipos, El apoyo, La Orientación y el apoyo al estudiante"));
+		        });
+		    });
+	    </script>
+	    <script type="text/javascript">
+	    	$(document).ready(function(){
+				$("#video").on( "click", function() {	
+					if ($('#video1').is(':hidden')) {
+						$('#video1').show(); 
+						$('#ojoOn').show(); 
+						$('#ojoOff').hide();
+					} else {
+						$('#video1').hide();
+						$('#ojoOn').hide(); 
+						$('#ojoOff').show();
+					}	
+				});
+			});		    	
+	    </script>
+	</p>
+<!-- fin codigo EVA -->
+</body>
+</html>
